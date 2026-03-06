@@ -1,0 +1,4 @@
+Spec,CCT_BW_Sym,Estimate_pp,SE_pp,CI_L,CI_U,P_value,Sig,Notes
+CCT MSE-Optimal,4.791,3.347,3.819,-4.138,10.831,0.380843,n.s.,Data-driven MSE-optimal
+CCT CER-Optimal,3.129,4.17,4.677,-4.996,13.336,0.372592,n.s.,For bias-corrected CI
+Manual h=10.0pp (NB09 original),10.0,-3.241,1.964,-7.091,0.609,0.098934,n.s.,Your original specification

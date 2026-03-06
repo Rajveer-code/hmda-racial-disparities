@@ -1,0 +1,3 @@
+density_left,density_right,discontinuity,SE,t_stat,p_value,Sig,Race,N_total,N_in_window
+0.126135,0.140385,0.01425,0.022696,0.628,0.5301,n.s.,White,6814228,3946823
+0.09405,0.115941,0.021891,0.014257,1.535,0.12469,n.s.,Black,685772,377418

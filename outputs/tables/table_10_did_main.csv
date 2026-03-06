@@ -1,0 +1,2 @@
+Spec,N_obs,N_lenders,Beta_Black_pp,Beta_SE,Gamma_Post_pp,Gamma_SE,Delta_DiD_pp,Delta_SE,T_stat,P_value,Significance,R_squared
+"Main (lender FE, all controls)",3026360,2400,-9.712,0.225,-3.113,0.161,-1.476,0.2,-7.373,0.0,***,0.0226

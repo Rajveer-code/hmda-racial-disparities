@@ -1,0 +1,2 @@
+N_obs,N_lenders,Black_pp,Black_SE,RDD_theta_pp,RDD_theta_SE,RDD_theta_t,RDD_theta_sig,DiD_delta_pp,DiD_delta_SE,DiD_delta_t,DiD_delta_sig,Triple_pp,Triple_SE,Triple_t,Triple_p,Triple_sig
+12307086,2476,-9.071,0.691,-2.548,0.426,-5.983,***,-2.694,0.474,-5.682,***,1.029,0.35,2.943,0.003279,**

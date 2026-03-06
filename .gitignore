@@ -1,0 +1,31 @@
+# Data — too large for GitHub (~25 GB)
+data/raw/
+data/processed/
+data/output/
+*.csv
+*.parquet
+*.feather
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~

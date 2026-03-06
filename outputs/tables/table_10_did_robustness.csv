@@ -1,0 +1,7 @@
+Spec,N_obs,N_lenders,Beta_Black_pp,Beta_SE,Delta_DiD_pp,Delta_SE,T_stat,P_value,Significance
+"Main (all years, all controls)",3026360,2400,-9.712,0.225,-1.476,0.2,-7.373,0.0,***
+Exclude 2020 (COVID anomaly),2385705,2309,-9.466,0.235,-1.771,0.207,-8.537,0.0,***
+Minimal controls,3026360,2400,-9.921,0.223,-1.45,0.202,-7.192,0.0,***
+Full controls (baseline),3026360,2400,-9.712,0.225,-1.476,0.2,-7.373,0.0,***
+Large lenders only (≥500 apps),2904978,1912,-9.749,0.23,-1.494,0.203,-7.357,0.0,***
+Post = 2023–2024 only (peak tightening),3026360,2400,-10.14,0.216,-1.161,0.215,-5.399,0.0,***

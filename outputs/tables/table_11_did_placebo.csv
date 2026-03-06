@@ -1,0 +1,4 @@
+Spec,N_obs,N_lenders,Beta_pp,Beta_SE,Delta_pp,Delta_SE,T_stat,P_value,Sig
+REAL: Post2022 (tightening shock),30111168,3698,-9.138,0.707,-0.489,0.629,-0.778,0.43686,
+PLACEBO: Post2021 (2020 vs 2021 only),18437993,3238,-9.321,0.872,1.081,0.808,1.338,0.181094,
+TIMING CHECK: 2021 (pre) vs 2022 (post),14222617,3245,-8.528,0.583,-0.897,0.312,-2.878,0.004024,**

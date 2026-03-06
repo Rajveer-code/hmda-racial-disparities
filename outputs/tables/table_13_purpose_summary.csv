@@ -1,0 +1,4 @@
+Loan_Type,N_obs,Raw_Gap_pp,FE_Penalty_pp,RDD_Theta_pp,RDD_Sig,DiD_Delta_pp,DiD_Sig
+Purchase,"17,989,122",12.24,-6.926,-2.474,**,0.138,
+Refinance,"17,563,236",16.41,-9.155,-0.245,,-1.309,
+All,"42,323,519",14.95,-9.518,-1.922,*,-1.051,
