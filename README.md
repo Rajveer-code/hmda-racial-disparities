@@ -6,7 +6,7 @@ Department of Computer Science and Business Systems
 Gyan Ganga Institute of Technology and Sciences, Jabalpur, India  
 rajveer.singhpall.cb23@ggits.net
 
-*Under review — Journal of Real Estate Finance and Economics (JREFE), March 2026*
+*Under review — Regional Science and Urban Economics, March 2026*
 
 ---
 
@@ -27,29 +27,29 @@ Exact permutation inference shows both the RDD and DiD subsample estimates excee
 
 ```
 hmda-racial-disparities/
-├── notebooks/                              # All analysis code — run in order 01 → 16
-│   ├── 01_data_cleaning.ipynb              # Raw HMDA → cleaned panel files
-│   ├── 02_descriptive_statistics.ipynb     # Summary statistics, Table 2
-│   ├── 03_dfl_decomposition.ipynb          # DFL reweighting decomposition, Table 3
-│   ├── 04_within_lender_fe.ipynb           # Within-lender fixed effects, Table 4
-│   ├── 05_robustness_checks.ipynb          # Covariate specification robustness
-│   ├── 06_regional_analysis.ipynb          # Geographic heterogeneity, Table 6
-│   ├── 07_credit_score_sensitivity.ipynb   # Manski partial-identification bounds
-│   ├── 08_generate_figures.ipynb           # All manuscript figures
-│   ├── 09_ltv_rdd.ipynb                    # 80% LTV regression discontinuity
-│   ├── 10_tightening_did.ipynb             # 2022 Fed tightening DiD
-│   ├── 11_placebo_robustness.ipynb         # Placebo threshold tests
-│   ├── 12_permutation_inference.ipynb      # Exact permutation inference (1,000 runs)
-│   ├── 13_loan_purpose_heterogeneity.ipynb # Purchase vs. refinance heterogeneity
-│   ├── 14_clustering_robustness.ipynb      # Standard error clustering robustness
-│   ├── 15_cct_optimal_bandwidth.ipynb      # CCT optimal bandwidth selection
-│   └── 16_honestdid_sensitivity.ipynb      # Rambachan–Roth HonestDiD sensitivity
+├── code/                                        # All analysis code — run in order 01 → 16
+│   ├── 01_data_cleaning.ipynb                   # Raw HMDA → cleaned panel files
+│   ├── 02_descriptive_statistics.ipynb          # Summary statistics, Table 2
+│   ├── 03_dfl_decomposition.ipynb               # DFL reweighting decomposition, Table 3
+│   ├── 04_within_lender_fe.ipynb                # Within-lender fixed effects, Table 4
+│   ├── 05_robustness_checks.ipynb               # Covariate specification robustness
+│   ├── 06_regional_analysis.ipynb               # Geographic heterogeneity, Table 6
+│   ├── 07_credit_score_sensitivity.ipynb        # Manski partial-identification bounds
+│   ├── 08_generate_figures.ipynb                # All manuscript figures
+│   ├── 09_ltv_rdd.ipynb                         # 80% LTV regression discontinuity
+│   ├── 10_tightening_did.ipynb                  # 2022 Fed tightening DiD
+│   ├── 11_final_robustness_placebo.ipynb        # Placebo threshold tests
+│   ├── 12_permutation_inference.ipynb           # Exact permutation inference (1,000 runs)
+│   ├── 13_loan_purpose_heterogeneity.ipynb      # Purchase vs. refinance heterogeneity
+│   ├── 14_clustering_robustness.ipynb           # Standard error clustering robustness
+│   ├── 15_cct_optimal_bandwidth.ipynb           # CCT optimal bandwidth selection
+│   └── 16_honest_did_sensitivity.ipynb          # Rambachan–Roth HonestDiD sensitivity
 │
-├── data/                                   # Raw data not included (see Data section below)
+├── data/                                        # Raw data not included (see Data section below)
 │
 ├── outputs/
-│   ├── figures/                            # All final figures (PNG/PDF)
-│   └── tables/                             # All final tables (CSV)
+│   ├── figures/                                 # All final figures (PNG/PDF)
+│   └── tables/                                  # All final tables (CSV)
 │
 ├── requirements.txt
 ├── LICENSE
@@ -62,7 +62,7 @@ hmda-racial-disparities/
 
 | Method | Design | Key Result |
 |--------|--------|------------|
-| DFL Reweighting | Reweight White applicants to match Black on income, LTV, loan amount, DTI | 98.6% of gap unexplained |
+| DFL Reweighting | Reweight White applicants to match Black on income, LTV, loan amount, property value | 98.6% of gap unexplained |
 | Within-Lender FE | Frisch-Waugh demeaning, lender fixed effects, clustered SE | 74.6% within-institution |
 | RDD at 80% LTV | McCrary density test + local linear regression at PMI threshold | −2.00 pp at threshold |
 | DiD × Fed Tightening | Black × Post-2022 interaction + event study, HonestDiD validation | +1.48 pp widening |
@@ -88,7 +88,7 @@ This study uses the **HMDA public loan-level data (2020–2024)** published by t
    hmda_2023_nationwide_all-records_labels.csv
    hmda_2024_nationwide_all-records_labels.csv
    ```
-4. Run `notebooks/01_data_cleaning.ipynb` to generate the processed panel files in `data/processed/`
+4. Run `code/01_data_cleaning.ipynb` to generate the processed panel files in `data/processed/`
 
 **Sample construction:** Starting from 43,441,950 raw applications, the analytical sample of 42,323,519 is obtained by restricting to non-Hispanic Black and White applicants, originated or denied outcomes only, and LTV ratios between 1–200%.
 
@@ -99,16 +99,16 @@ This study uses the **HMDA public loan-level data (2020–2024)** published by t
 ### Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hmda-racial-disparities.git
+git clone https://github.com/Rajveer-code/hmda-racial-disparities.git
 cd hmda-racial-disparities
 pip install -r requirements.txt
 ```
 
 ### Run
 
-Open Jupyter and run notebooks `01` through `16` in order. Each notebook reads from `data/processed/` and writes outputs to `outputs/tables/` and `outputs/figures/`.
+Open Jupyter and run notebooks `01` through `16` in the `code/` folder in order. Each notebook reads from `data/processed/` and writes outputs to `outputs/tables/` and `outputs/figures/`.
 
-> **Memory note:** All notebooks are designed to run within 16 GB RAM using chunked loading and stratified sampling. Estimated total runtime: 8–12 hours, dominated by notebooks 04 (within-lender FE) and 12 (permutation inference).
+> **Memory note:** All notebooks are designed to run within 16 GB RAM using chunked loading and stratified sampling. Estimated total runtime: 8–12 hours, dominated by `04_within_lender_fe.ipynb` (within-lender fixed effects) and `12_permutation_inference.ipynb` (1,000 permutation runs).
 
 ---
 
@@ -135,7 +135,7 @@ Install all with: `pip install -r requirements.txt`
   title   = {Persistent Racial Disparities in {U.S.} Mortgage Approval:
              Evidence from 42 Million Applications, 2020--2024},
   author  = {Pall, Rajveer Singh},
-  journal = {Journal of Real Estate Finance and Economics},
+  journal = {Regional Science and Urban Economics},
   year    = {2026},
   note    = {Under review}
 }
