@@ -1,0 +1,10 @@
+Code,Reason,Black_%,White_%,Diff_pp,Sig,N_Black,N_White
+1,DTI,34.15,34.35,-0.2,***,533403,2565554
+2,Employment history,2.37,2.47,-0.1,***,37042,184401
+3,Credit history,42.04,31.12,10.92,***,656693,2324370
+4,Collateral,12.25,16.62,-4.37,***,191275,1241148
+5,Insufficient cash,5.32,4.18,1.14,***,83164,312532
+6,Unverifiable info,5.3,6.08,-0.78,***,82731,454109
+7,Incomplete application,11.07,13.17,-2.1,***,172843,983644
+8,Mortgage insurance denied,0.09,0.09,0.01,*,1411,6354
+9,Other,13.45,13.62,-0.17,***,210097,1016977
