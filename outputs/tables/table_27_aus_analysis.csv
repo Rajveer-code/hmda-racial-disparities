@@ -1,0 +1,4 @@
+AUS_Type,N_lenders,Mean_gap_pp,SE,CI_L,CI_U
+GSE_Algorithmic,2085,6.91,0.166,6.584,7.236
+Manual,15,13.399,3.454,6.629,20.169
+Other_Automated,2267,11.722,0.24,11.252,12.192

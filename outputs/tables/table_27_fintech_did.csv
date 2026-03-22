@@ -1,0 +1,4 @@
+AUS_Type,N_obs,N_lenders,DiD_delta_pp,SE,T_stat,P_value,Sig
+GSE_Algorithmic,1338324,3030,-0.752,0.193,-3.887,0.0001,***
+Manual,8128,79,1.151,3.238,0.355,0.7232,n.s.
+Other_Automated,1404902,3590,-0.0,0.334,-0.0,1.0,n.s.
