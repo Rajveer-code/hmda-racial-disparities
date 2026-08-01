@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Persistent Racial Disparities in U.S. Mortgage Approval: Evidence from 42 Million Applications, 2020–2024"
+type: software
+authors:
+  - family-names: Pall
+    given-names: "Rajveer Singh"
+    orcid: "https://orcid.org/0009-0001-6762-6134"
+license: MIT
+repository-code: "https://github.com/Rajveer-code/hmda-racial-disparities"
+identifiers:
+  - type: other
+    value: "SSRN:6334459"
+    description: "SSRN preprint"
