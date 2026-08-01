@@ -7,27 +7,25 @@ A full-scale empirical study of racial approval gaps in the U.S. mortgage market
 
 **Author:** Rajveer Singh Pall  
 **Institution:** Gyan Ganga Institute of Technology and Sciences  
-**Status:** Working paper — under preparation for journal submission
+**Status:** Under review — *Journal of Housing Economics* (Elsevier), submitted March 2026
 
 ---
 
 ## Key Findings
 
 - **14 percentage-point raw approval gap** between Black and White applicants, persistent across all five years studied (2020–2024).
-- **99% of the gap remains unexplained** after controlling for income, loan amount, property value, and LTV via DFL reweighting — observable characteristics account for almost nothing.
+- **68% of the gap is not explained by observables** — income, loan amount, property value, LTV, and DTI jointly account for well under a third of the raw gap.
 - **77% of the gap is within-lender**, not explained by Black applicants sorting into stricter institutions. The disparity lives inside lender decisions, not between them.
 - **Algorithmic underwriting cuts the gap nearly in half.** GSE-algorithm-underwritten loans show a 6.9 pp gap; manually underwritten loans show 13.4 pp — direct evidence that human discretion amplifies differential treatment.
 - **The gap worsened significantly during the 2022–2024 rate-tightening cycle**, with the Black × Post-2022 DiD coefficient statistically significant and robust to permutation inference.
 - **Manski lower bounds hold above 9 pp** even under the most generous assumptions about unobserved FICO scores, DTI, liquid assets, and employment stability combined.
-
 ---
 
 ## Abstract
 
 This paper documents and investigates persistent racial disparities in U.S. mortgage approval decisions using the full Home Mortgage Disclosure Act (HMDA) microdata from 2020 to 2024 — approximately 42 million applications covering Black and White applicants at U.S. lending institutions. 
 
-I apply five complementary identification strategies. A DiNardo-Fortin-Lemieux (DFL) decomposition shows that observable financial characteristics explain less than 1% of the raw approval gap. Within-lender fixed effects, estimated via Frisch-Waugh-Lovell demeaning, attribute 77% of the gap to differential treatment within the same institution rather than applicant sorting. A regression discontinuity design at the 80% LTV threshold — the private mortgage insurance boundary — identifies a statistically significant differential discontinuity for Black applicants. A difference-in-differences specification shows the gap widened during the Federal Reserve's 2022–2024 tightening cycle. Manski partial-identification bounds, extended to cover FICO scores, DTI ratios, liquid asset reserves, and employment stability simultaneously, confirm the gap cannot be explained away by omitted creditworthiness variables. Permutation inference, denial reason analysis, AUS-type heterogeneity, and lender persistence tests provide additional corroborating evidence. Taken together, the findings are consistent with differential treatment operating through human underwriting discretion in the U.S. mortgage market.
-
+I apply five complementary identification strategies. A DiNardo-Fortin-Lemieux (DFL) decomposition controlling for income, loan amount, property value, LTV, and DTI shows that observable financial characteristics explain only 32% of the raw approval gap — 68% is unexplained. (A narrower four-covariate specification that excludes DTI narrows the explained share further, to under 2%; it is reported as a specification check, not the headline.) Within-lender fixed effects, estimated via Frisch-Waugh-Lovell demeaning, attribute 77% of the gap to differential treatment within the same institution rather than applicant sorting. A regression discontinuity design at the 80% LTV threshold — the private mortgage insurance boundary — identifies a statistically significant differential discontinuity for Black applicants. A difference-in-differences specification shows the gap widened during the Federal Reserve's 2022–2024 tightening cycle. Manski partial-identification bounds, extended to cover FICO scores, DTI ratios, liquid asset reserves, and employment stability simultaneously, confirm the gap cannot be explained away by omitted creditworthiness variables. Permutation inference, denial reason analysis, AUS-type heterogeneity, and lender persistence tests provide additional corroborating evidence. Taken together, the findings are consistent with differential treatment operating through human underwriting discretion in the U.S. mortgage market.
 ---
 
 ## Main Results
@@ -58,7 +56,7 @@ I apply five complementary identification strategies. A DiNardo-Fortin-Lemieux (
 
 | Method | Estimand | Key Result |
 |---|---|---|
-| DFL Decomposition | % of gap explained by observables | < 1% explained; 99% unexplained |
+| DFL Decomposition | % of gap explained by observables | 32% explained; 68% unexplained |
 | Within-Lender Fixed Effects (FWL) | Within- vs between-lender gap | 77% within-lender |
 | RDD at 80% LTV | Differential discontinuity at PMI threshold | Significant θ; null at placebo thresholds |
 | DiD (Black × Post-2022) | Gap change during tightening cycle | Gap significantly wider post-2022 |
@@ -196,21 +194,19 @@ scipy >= 1.9
 matplotlib >= 3.6
 statsmodels >= 0.13
 rdrobust >= 0.1
-pathlib (stdlib)
 ```
-
 ---
 
 ## Citation
 
 If you use this code or findings in your work, please cite:
 ```bibtex
-@unpublished{pall2025mortgage,
+@unpublished{pall2026mortgage,
   author  = {Rajveer Singh Pall},
   title   = {Persistent Racial Disparities in {U.S.} Mortgage Approval:
              Evidence from 42 Million Applications, 2020--2024},
-  year    = {2025},
-  note    = {Working paper, Gyan Ganga Institute of Technology and Sciences}
+  year    = {2026},
+  note    = {Under review, Journal of Housing Economics (Elsevier). SSRN: 6334459}
 }
 ```
 
