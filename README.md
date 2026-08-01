@@ -19,6 +19,7 @@ A full-scale empirical study of racial approval gaps in the U.S. mortgage market
 - **Algorithmic underwriting cuts the gap nearly in half.** GSE-algorithm-underwritten loans show a 6.9 pp gap; manually underwritten loans show 13.4 pp — direct evidence that human discretion amplifies differential treatment.
 - **The gap worsened significantly during the 2022–2024 rate-tightening cycle**, with the Black × Post-2022 DiD coefficient statistically significant and robust to permutation inference.
 - **Manski lower bounds hold above 9 pp** even under the most generous assumptions about unobserved FICO scores, DTI, liquid assets, and employment stability combined.
+
 ---
 
 ## Abstract
@@ -26,6 +27,7 @@ A full-scale empirical study of racial approval gaps in the U.S. mortgage market
 This paper documents and investigates persistent racial disparities in U.S. mortgage approval decisions using the full Home Mortgage Disclosure Act (HMDA) microdata from 2020 to 2024 — approximately 42 million applications covering Black and White applicants at U.S. lending institutions. 
 
 I apply five complementary identification strategies. A DiNardo-Fortin-Lemieux (DFL) decomposition controlling for income, loan amount, property value, LTV, and DTI shows that observable financial characteristics explain only 32% of the raw approval gap — 68% is unexplained. (A narrower four-covariate specification that excludes DTI narrows the explained share further, to under 2%; it is reported as a specification check, not the headline.) Within-lender fixed effects, estimated via Frisch-Waugh-Lovell demeaning, attribute 77% of the gap to differential treatment within the same institution rather than applicant sorting. A regression discontinuity design at the 80% LTV threshold — the private mortgage insurance boundary — identifies a statistically significant differential discontinuity for Black applicants. A difference-in-differences specification shows the gap widened during the Federal Reserve's 2022–2024 tightening cycle. Manski partial-identification bounds, extended to cover FICO scores, DTI ratios, liquid asset reserves, and employment stability simultaneously, confirm the gap cannot be explained away by omitted creditworthiness variables. Permutation inference, denial reason analysis, AUS-type heterogeneity, and lender persistence tests provide additional corroborating evidence. Taken together, the findings are consistent with differential treatment operating through human underwriting discretion in the U.S. mortgage market.
+
 ---
 
 ## Main Results
